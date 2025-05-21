@@ -2,42 +2,51 @@
 </script>
 
 <template>
-  <main class="container">
-    <h1>Home Page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit necessitatibus maiores assumenda, corrupti facere placeat incidunt saepe distinctio repudiandae in quae libero sequi reiciendis consectetur, explicabo odit et ducimus?</p>
-  </main>
+  <div class="container">
+    <div v-html="markdownToHtml"></div>
+  </div>
 </template>
 
+<script lang="ts">
+import { marked } from "marked";
+
+export default {
+  name: "App",
+  data() {
+    return {
+      markdown: "# Portfolio"
+    }
+  },
+  computed: {
+    markdownToHtml() {
+      return marked(this.markdown);
+    }
+  },
+  methods: {
+    async loadTextFile() {
+      try {
+        const response = await fetch('/public/markdown/Portfolio.md');
+        if (!response.ok) throw new Error('Falha ao carregar arquivo');
+        const text = await response.text();
+        return text;
+      } catch (error) {
+        console.error('Erro:', error);
+        return '';
+      }
+    }
+  },
+  async mounted() {
+    this.markdown = await this.loadTextFile();
+  }
+}
+</script>
+
 <style scoped>
-main {
+.container {
   padding: 10%;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  border-radius: 3% 3% 0 0;
+  border-radius: 1em;
 }
 </style>

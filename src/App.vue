@@ -10,7 +10,10 @@ import Board from './components/Board.vue';
     </div>
 
     <header>
-      <Board name="Jadno Barbosa" role="Software Developer"/>
+      <Board
+       name="Jadno Barbosa"
+       :roles="['Software Engineer', 'Information Systems Bachelor', 'Musician']"
+      />
     </header>
   </main>
 </template>
@@ -25,14 +28,14 @@ main {
 }
 
 .page {
-  margin: 2%;
-  margin-bottom: 0;
+  margin: 0 5vh;
 }
 
 header {
-  line-height: 1.5;
-  padding-top: 2%;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 40%;
 }
 
 ::-webkit-scrollbar {

@@ -1,20 +1,26 @@
 <script setup lang="ts">
 defineProps<{
   name: string,
-  role: string
+  roles: string[]
 }>()
 </script>
 
 <template>
-  <div class="container">
+  <div id="top" class="container">
     <header>
       <div class="headline">
         <h1>{{ name }}</h1>
-        <h2>{{ role }}</h2>
+        <h2 v-for="(role, index) in roles" :key="index">
+          {{ role }}
+        </h2>
       </div>
-      <img src="../assets/Jadno.jpeg" alt="Foto de Jadno Barbosa">
+      <div class="icon">
+        <img src="../assets/Jadno.jpeg" alt="Foto de Jadno Barbosa">
+      </div>
     </header>
+  </div>
 
+  <div id="bottom" class="container">
     <section>
       <li>Sobre</li>
       <li>Sobre</li>
@@ -32,21 +38,38 @@ defineProps<{
 
 <style scoped>
 .container {
-  border-radius: 3% 0 0 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#top {
+  border-radius: 1em 0 0 1em;
+  
+}
+
+#bottom {
+  border-radius: 1em 0 0 0;
 }
 
 header {
   display: flex;
-  max-height: 50%;
-  max-width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
 }
 
 img {
-    max-height: 100%;
-    margin: 2%;
+    max-height: 80%;
     border-radius: 3%;
+}
+
+.icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .headline {
@@ -60,5 +83,20 @@ h1 {
   font-weight: 500;
   font-size: 2.6rem;
   text-align: center;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+}
+
+li:hover {
+  background-color: blueviolet;
 }
 </style>
