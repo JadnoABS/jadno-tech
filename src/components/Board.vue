@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CRTScreen from './CRTScreen.vue';
+
 defineProps<{
   name: string,
   roles: string[]
@@ -6,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div id="top" class="container">
+  <CRTScreen>
     <header>
       <div class="headline">
         <h1>{{ name }}</h1>
@@ -18,9 +20,9 @@ defineProps<{
         <img src="../assets/Jadno.jpeg" alt="Foto de Jadno Barbosa">
       </div>
     </header>
-  </div>
+  </CRTScreen>
 
-  <div id="bottom" class="container">
+  <CRTScreen>
     <section>
       <li>Sobre</li>
       <li>Sobre</li>
@@ -33,7 +35,7 @@ defineProps<{
       <li>Sobre</li>
       <li>Sobre</li>
     </section>
-  </div>
+  </CRTScreen>
 </template>
 
 <style scoped>

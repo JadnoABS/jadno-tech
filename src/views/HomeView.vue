@@ -2,16 +2,20 @@
 </script>
 
 <template>
-  <div class="container">
-    <div v-html="markdownToHtml"></div>
-  </div>
+  <CRTScreen>
+    <div class="text" v-html="markdownToHtml"></div>
+  </CRTScreen>
 </template>
 
 <script lang="ts">
+import CRTScreen from "@/components/CRTScreen.vue";
 import { marked } from "marked";
 
 export default {
   name: "App",
+  components: {
+    CRTScreen,
+  },
   data() {
     return {
       markdown: "# Portfolio"
@@ -43,10 +47,16 @@ export default {
 
 <style scoped>
 .container {
-  padding: 10%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
   border-radius: 1em;
+}
+
+.text {
+  padding: 5%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #02012b transparent;
 }
 </style>
