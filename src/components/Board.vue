@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import CRTScreen from './CRTScreen.vue';
 
-defineProps<{
-  name: string,
-  roles: string[]
-}>()
+// defineProps<{
+//   name: string,
+//   roles: string[]
+// }>()
 </script>
 
 <template>
-  <CRTScreen>
+  <CRTScreen id="top">
     <header>
       <div class="headline">
         <h1>{{ name }}</h1>
@@ -16,27 +16,46 @@ defineProps<{
           {{ role }}
         </h2>
       </div>
-      <div class="icon">
+      <div class="profile-image">
         <img src="../assets/Jadno.jpeg" alt="Foto de Jadno Barbosa">
       </div>
     </header>
   </CRTScreen>
 
-  <CRTScreen>
-    <section>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-      <li>Sobre</li>
-    </section>
+  <CRTScreen id="bottom">
+    <ul>
+      <li v-for="(topic, index) in topics" :key="topic.id" @mouseover="scrollTo(topic.id)">
+        <div class="icon"><font-awesome-icon :icon="['fas', 'angle-right']" /></div>
+        <div class="item">{{ topic.text }}</div>
+      </li>
+    </ul>
   </CRTScreen>
 </template>
+
+<script lang="ts">
+
+export default {
+  name: "Board",
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    roles: {
+      type: Array<String>,
+      required: true
+    },
+    topics: {
+      type: Array<Topic>,
+      required: true
+    },
+    scrollTo: {
+      type: Function,
+      required: true
+    }
+  },
+}
+</script>
 
 <style scoped>
 .container {
@@ -46,13 +65,9 @@ defineProps<{
   height: 100%;
 }
 
-#top {
-  border-radius: 1em 0 0 1em;
-  
-}
-
 #bottom {
   border-radius: 1em 0 0 0;
+  padding: 0;
 }
 
 header {
@@ -68,7 +83,7 @@ img {
     border-radius: 3%;
 }
 
-.icon {
+.profile-image {
   height: 100%;
   display: flex;
   align-items: center;
@@ -87,18 +102,40 @@ h1 {
   text-align: center;
 }
 
-section {
-  width: 100%;
+ul {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  width: 100%;
+  height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 li {
+  display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  margin-left: 1em;
+  visibility: hidden;
+}
+
+.item {
+  text-align: center;
   width: 100%;
 }
 
 li:hover {
   background-color: blueviolet;
+}
+
+li:hover .icon {
+  visibility: visible;
 }
 </style>

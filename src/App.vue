@@ -1,20 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import Board from './components/Board.vue';
+import Home from './views/Home.vue';
 </script>
 
 <template>
   <main>
-    <div class="page">
-      <RouterView/>
-    </div>
-
-    <header>
-      <Board
-       name="Jadno Barbosa"
-       :roles="['Software Engineer', 'Information Systems Bachelor', 'Musician']"
-      />
-    </header>
+    <Home />
   </main>
 </template>
 
@@ -25,17 +16,6 @@ main {
   width: 100%;
   padding: 0;
   justify-content: space-between;
-}
-
-.page {
-  margin: 0 5vh;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 40%;
 }
 
 ::-webkit-scrollbar {
