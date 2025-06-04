@@ -11,10 +11,8 @@ import Resume from '../components/Resume.vue';
 
     <header>
       <Board
-       name="Jadno Barbosa"
-       :roles="['Software Engineer', 'Information Systems Bachelor', 'Musician']"
-			 :topics="topics"
-			 :scroll-to="scrollTo"
+		:topics="topics"
+		:scroll-to="scrollTo"
       />
     </header>
 	</div>

@@ -1,25 +1,37 @@
 <script setup lang="ts">
+import { height } from '@fortawesome/free-brands-svg-icons/fa42Group';
 import CRTScreen from './CRTScreen.vue';
+import Headline from './Headline.vue';
+import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel';
 
-// defineProps<{
-//   name: string,
-//   roles: string[]
-// }>()
+import 'vue3-carousel/carousel.css'
+const carouselConfig = {
+  itemsToShow: 1,
+  mouseWheel: true
+}
+
 </script>
 
 <template>
-  <CRTScreen id="top">
-    <header>
-      <div class="headline">
-        <h1>{{ name }}</h1>
-        <h2 v-for="(role, index) in roles" :key="index">
-          {{ role }}
-        </h2>
-      </div>
-      <div class="profile-image">
-        <img src="../assets/Jadno.jpeg" alt="Foto de Jadno Barbosa">
-      </div>
-    </header>
+  <CRTScreen class="carousel-container" id="top">
+    <Carousel class="carousel-item" v-bind="carouselConfig">
+      <template #slides>
+      <Slide>
+        <Headline/>
+      </Slide>
+      <Slide>
+        <Headline/>
+      </Slide>
+      <Slide>
+        <Headline/>
+      </Slide>
+      </template>
+
+      <template #addons>
+        <Navigation/>
+        <Pagination/>
+      </template>
+    </Carousel>
   </CRTScreen>
 
   <CRTScreen id="bottom">
@@ -37,14 +49,6 @@ import CRTScreen from './CRTScreen.vue';
 export default {
   name: "Board",
   props: {
-    name: {
-      type: String,
-      required: true
-    },
-    roles: {
-      type: Array<String>,
-      required: true
-    },
     topics: {
       type: Array<Topic>,
       required: true
@@ -70,39 +74,17 @@ export default {
   padding: 0;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-img {
-    max-height: 80%;
-    border-radius: 3%;
+.carousel-item {
+  width: inherit; 
+  height: inherit;
 }
 
-.profile-image {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.headline {
-  text-align: center;
-  margin: 2%;
-  max-width: 100%;
-  white-space: nowrap;
-}
-
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  text-align: center;
-}
-
-ul {
+#bottom ul {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -112,7 +94,7 @@ ul {
   padding: 0;
 }
 
-li {
+#bottom li {
   display: flex;
   list-style: none;
   align-items: center;
@@ -131,11 +113,11 @@ li {
   width: 100%;
 }
 
-li:hover {
+#bottom li:hover {
   background-color: blueviolet;
 }
 
-li:hover .icon {
+#bottom li:hover .icon {
   visibility: visible;
 }
 </style>

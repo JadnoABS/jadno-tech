@@ -1,16 +1,23 @@
 # Introdução
 
-Seja muito bem vindo ao meu website, o principal objetivo dessa página é expor minha formação acadêmica, minhas experiências profissionais, meus projetos e ideias, e qualquer outra coisa que me dê vontade de compartilhar por aqui.
+&nbsp;
 
-O meu nome é Jadno Augusto Barbosa da Silva, tenho 21 anos de idade, resido em São Paulo-SP desde os 18 mas nasci e fui criado em Brumado-BA.
-Sou bacharel em Sistemas de Informação pela Universidade de São Paulo.
-Sou desenvolvedor de software com foco em backend, utilizo tecnologias como Java e Typescript.
-Sou músico: guitarrista, baixista, percussionista e compositor.
+\> Seja muito bem vindo ao meu website, o principal objetivo dessa página é contar sobre mim, expondo minhas conquistas, ideias, projetos e competências (e qualquer outra coisa que me dê vontade de compartilhar por aqui).\
+\> O meu nome é Jadno Augusto Barbosa da Silva, tenho 21 anos de idade, resido em São Paulo-SP desde os 18 anos mas nasci e fui criado em Brumado-BA, uma pequena cidade do sudoeste baiano.\
+\> Sou bacharel em Sistemas de Informação pela Universidade de São Paulo.\
+\> Sou desenvolvedor de software com foco em backend, utilizo tecnologias como Java e Typescript.\
+\> Sou músico: guitarrista, baixista, percussionista e produtor.
+
+&nbsp;
+
+---
 
 # Formação Acadêmica
-## Bacharelado em Sistemas de Informação (USP - EACH)
+## Bacharelado em Sistemas de Informação
+### (Escola de Artes Ciências e Humanidades - USP)
 Durante a minha graduação (2021-2024), adquiri conhecimentos amplos em diferentes áreas da computação, matemática e gestão, tornando-me apto a atuar profissionalmente em diferentes aspectos do desenvolvimento de software.
-Além disso, tive contato com diversos professores doutores que me guiaram durante esse caminho, participei de grupos de estudo, projetos sociais, empresa júnior e bateria universitária.
+Além disso, tive contato com diversos professores doutores que me guiaram durante esse caminho; participei de grupos de estudo, projetos, empresa júnior e bateria universitária.
+
 ### Conhecimentos adquiridos
 #### Computação:
 - Fundamentos de Sistemas de Informação
@@ -59,6 +66,10 @@ Além disso, tive contato com diversos professores doutores que me guiaram duran
 	- Balatucada 2022, 2023 e 2024
 	- TABU 2024
 
+&nbsp;
+
+---
+
 # Experiência Profissional
 ## Desenvolvedor Fullstack (Freelancer)
 Desde dezembro de 2024 venho recebendo trabalhos temporários na modalidade freelancer, dentre meus trabalhos já feitos está o desenvolvimento de uma plataforma para apoiar o gerenciamento de projetos dentro de uma empresa.
@@ -88,3 +99,5 @@ Atuei na equipe de desenvolvimento de um aplicativo mobile para um clube social,
 - Express
 - Sequelize
 - PostgreSQL
+
+&nbsp;

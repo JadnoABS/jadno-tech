@@ -8,11 +8,6 @@
 import CRTScreen from "@/components/CRTScreen.vue";
 import { marked } from "marked";
 import type { RendererObject } from "marked";
-import { nextTick, ref, watchPostEffect } from "vue";
-
-const text = ref<HTMLDivElement | null>(null);
-
-const topics = ref<Topic[] | null>([]);
 
 const renderer: RendererObject = {
   heading({tokens , depth}): string {
@@ -24,12 +19,23 @@ const renderer: RendererObject = {
       .replace(/[^\w-]+/g, '-')
       .replace(/^-+|-+$/g, '');
 
+    // if(depth >= 3) return `<p style="font-weight: bold; font-size: ${3 - (depth/4)}vw">${text}</p>`;
+
     return `
-      <h${depth} id="${id}">
+      <h${depth} style="text-align: center; font-weight: bold; font-size: ${2.5 - (depth/4)}vw" id="${id}">
         ${text}
       </h${depth}>
     `;
   },
+  paragraph({tokens}): string {
+    const text = this.parser.parseInline(tokens);
+
+    return `
+      <p style="font-size: 1.5vw">
+        ${text}
+      </p>
+    `;
+  }
 };
 
 marked.use({ renderer });
