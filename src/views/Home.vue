@@ -41,7 +41,6 @@ export default {
 <style scoped>
 .page {
 	display: flex;
-	padding: 2em;
 }
 
 header {

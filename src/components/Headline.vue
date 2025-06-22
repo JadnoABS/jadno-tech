@@ -19,7 +19,7 @@ export default {
   name: "Headline",
   data() {
     return {
-      roles: ['Software Engineer', 'Information Systems Bachelor', 'Musician']
+      roles: ['Engenheiro de Software', 'Bel. em Sistemas de Informação', 'Músico']
     }
   }
 }
@@ -50,7 +50,7 @@ img {
   text-align: center;
   margin: 2%;
   max-width: 100%;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 h1 {

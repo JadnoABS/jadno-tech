@@ -17,14 +17,14 @@
 }
 
 .container {
-    background-color: var(--color-container);
+    /* background-color: var(--color-background); */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     overflow-y: auto;
     justify-content: space-between;
-    border: 1.5em inset;
-    border-color: blueviolet;
+    /* border: 1.5em inset;
+    border-color: blueviolet; */
 }
 
 h1 {

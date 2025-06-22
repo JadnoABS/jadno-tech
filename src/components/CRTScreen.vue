@@ -21,14 +21,14 @@ export default {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  border-radius: 1em;
+  /* border-radius: 1em; */
 }
 
 .crt-screen {
   position: relative;
   width: 100%;  /* Ajuste conforme necessário */
   height: 100%; /* Ajuste conforme necessário */
-  background-color: #570000;
+  /* background-color: #570000; */
   color: antiquewhite; /* Cor do texto estilo terminal */
   padding: 20px;
   overflow: hidden;

@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { height } from '@fortawesome/free-brands-svg-icons/fa42Group';
 import CRTScreen from './CRTScreen.vue';
 import Headline from './Headline.vue';
 import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel';
 
-import 'vue3-carousel/carousel.css'
 const carouselConfig = {
   itemsToShow: 1,
   mouseWheel: true
@@ -45,6 +43,7 @@ const carouselConfig = {
 </template>
 
 <script lang="ts">
+import 'vue3-carousel/dist/carousel.css'
 
 export default {
   name: "Board",
@@ -58,10 +57,16 @@ export default {
       required: true
     }
   },
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation
+  }
 }
 </script>
 
-<style scoped>
+<style>
 .container {
   display: flex;
   flex-direction: column;
@@ -70,7 +75,7 @@ export default {
 }
 
 #bottom {
-  border-radius: 1em 0 0 0;
+  /* border-radius: 1em 0 0 0; */
   padding: 0;
 }
 
@@ -80,8 +85,27 @@ export default {
 }
 
 .carousel-item {
+  padding: 2em;
   width: inherit; 
   height: inherit;
+}
+
+.carousel__prev,
+.carousel__next {
+  color: #FFFFFF;
+}
+
+.carousel__prev--disabled,
+.carousel__next--disabled {
+  display: none;
+}
+
+.carousel__pagination-button {
+  background-color: #570000;
+}
+
+.carousel__pagination-button--active {
+  background-color: #FFFFFF;
 }
 
 #bottom ul {
@@ -114,7 +138,8 @@ export default {
 }
 
 #bottom li:hover {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  background-color: #570000;
 }
 
 #bottom li:hover .icon {

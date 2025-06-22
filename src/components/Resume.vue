@@ -68,7 +68,7 @@ export default {
   methods: {
     async loadTextFile() {
       try {
-        const response = await fetch('/public/markdown/Portfolio.md');
+        const response = await fetch('/markdown/Portfolio.md');
         if (!response.ok) throw new Error('Falha ao carregar arquivo');
         const text = await response.text();
         return text;
@@ -119,13 +119,13 @@ export default {
   padding: 2%;
   display: flex;
   flex-direction: column;
-  border-radius: 1em;
+  /* border-radius: 1em; */
 }
 
 .text {
   padding: 5%;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #02012b transparent;
+  scrollbar-color: #570000 transparent;
 }
 </style>
