@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CRTScreen from './CRTScreen.vue';
+import External from './External.vue';
 import Headline from './Headline.vue';
 import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel';
 
@@ -18,10 +19,7 @@ const carouselConfig = {
         <Headline/>
       </Slide>
       <Slide>
-        <Headline/>
-      </Slide>
-      <Slide>
-        <Headline/>
+        <External/>
       </Slide>
       </template>
 
@@ -36,7 +34,7 @@ const carouselConfig = {
     <ul>
       <li v-for="(topic, index) in topics" :key="topic.id" @mouseover="scrollTo(topic.id)">
         <div class="icon"><font-awesome-icon :icon="['fas', 'angle-right']" /></div>
-        <div class="item">{{ topic.text }}</div>
+        <div class="item"><h2>{{ topic.text }}</h2></div>
       </li>
     </ul>
   </CRTScreen>

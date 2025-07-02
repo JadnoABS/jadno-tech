@@ -32,11 +32,11 @@ export default {
   color: antiquewhite; /* Cor do texto estilo terminal */
   padding: 20px;
   overflow: hidden;
-  /* box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
     background-image: 
-    linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
-  background-size: 10px 10px; */
+    linear-gradient(rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 10px 10px;
 }
 
 /* Efeito de brilho/glow */
