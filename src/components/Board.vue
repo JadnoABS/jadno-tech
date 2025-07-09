@@ -80,6 +80,7 @@ export default {
 .carousel-container {
   max-width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .carousel-item {
@@ -96,6 +97,11 @@ export default {
 .carousel__prev--disabled,
 .carousel__next--disabled {
   display: none;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  color: #570000;
 }
 
 .carousel__pagination-button {
@@ -142,5 +148,20 @@ export default {
 
 #bottom li:hover .icon {
   visibility: visible;
+}
+
+@media (max-width: 1125px) {
+  #bottom {
+    display: none;
+  }
+  
+  .carousel-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-item {
+    height: 100%;
+  }
 }
 </style>

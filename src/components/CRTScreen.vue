@@ -24,6 +24,18 @@ export default {
   /* border-radius: 1em; */
 }
 
+@media (max-width: 1125px) {
+  .container {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 714px) {
+  .container {
+    padding: 3%;
+  }
+}
+
 .crt-screen {
   position: relative;
   width: 100%;  /* Ajuste conforme necessário */

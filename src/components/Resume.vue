@@ -22,7 +22,7 @@ const renderer: RendererObject = {
     // if(depth >= 3) return `<p style="font-weight: bold; font-size: ${3 - (depth/4)}vw">${text}</p>`;
 
     return `
-      <h${depth} style="text-align: center; font-weight: bold; font-size: ${2.5 - (depth/4)}vw" id="${id}">
+      <h${depth} style="text-align: center; font-weight: bold; font-size: max(${2.5 - (depth/4)}vw, ${Math.max(18 - depth * 2, 14)}px); word-wrap: break-word; overflow-wrap: break-word; hyphens: auto; white-space: normal; max-width: 100%;" id="${id}">
         ${text}
       </h${depth}>
     `;
@@ -31,10 +31,15 @@ const renderer: RendererObject = {
     const text = this.parser.parseInline(tokens);
 
     return `
-      <p style="font-size: 1.5vw">
+      <p style="font-size: max(1.5vw, 14px); word-wrap: break-word; overflow-wrap: break-word; hyphens: auto; white-space: normal; max-width: 100%;">
         ${text}
       </p>
     `;
+  },
+  link({href, title, text}): string {
+    const isExternal = href.startsWith('http') && !href.includes('meusite.com');
+    const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+    return `<a href="${href}"${target}${title ? ` title="${title}"` : ''}>${text}</a>`;
   }
 };
 
@@ -127,5 +132,66 @@ export default {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #570000 transparent;
+  height: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+
+/* Force text wrapping on all elements inside .text */
+.text * {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  white-space: normal !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.text p, .text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  white-space: pre-wrap !important;
+}
+
+@media (max-width: 1125px) {
+  .text {
+    height: auto;
+    max-height: 60vh;
+  }
+  
+  .text * {
+    word-break: break-word !important;
+  }
+}
+
+@media (max-width: 714px) {
+  .text {
+    padding: 3%;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+  
+  .text * {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+
+/* Global styles for mobile text wrapping */
+@media (max-width: 714px) {
+  .text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+  
+  .text p {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    line-height: 1.4 !important;
+  }
 }
 </style>

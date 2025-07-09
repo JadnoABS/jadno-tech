@@ -12,10 +12,24 @@ import Home from './views/Home.vue';
 <style scoped>
 main {
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   padding: 0;
   justify-content: space-between;
+}
+
+@media (max-width: 1125px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 714px) {
+  main {
+    min-height: 100vh;
+  }
 }
 
 ::-webkit-scrollbar {
