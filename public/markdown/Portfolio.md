@@ -119,7 +119,7 @@ posição de um servo motor entre ABERTO e FECHADO, como uma fechadura digital.
 \> Micro Python \
 \> ESP 32
 
-<img src="./digital-locker.gif" width="300" style="display: block; margin: auto;"/>
+<img src="./digital-locker.gif" width="300" style="display: block; margin: auto;" alt="Gif mostrando o funcionamento do digital locker"/>
 
 &nbsp;
 
@@ -138,7 +138,7 @@ renda mensal definida pelo usuário.
 
 &nbsp;
 
-<img src="./expenses-manager.png" width="600" style="display: block; margin: auto;"/>
+<img src="./expenses-manager.png" width="600" style="display: block; margin: auto;" alt="Painel do expenses manager"/>
 
 &nbsp;
 
@@ -150,6 +150,6 @@ encostar nos espinhos e nas bombas.
 
 &nbsp;
 
-<img src="./bouncing-ball.jpg" width="600" style="display: block; margin: auto;"/>
+<img src="./bouncing-ball.jpg" width="600" style="display: block; margin: auto;" alt="Tela inicial do Bouncing Ball Game"/>
 
 &nbsp;

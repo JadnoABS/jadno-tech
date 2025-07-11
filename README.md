@@ -1,18 +1,9 @@
 # jadno-tech
 
-This template should help get you started developing with Vue 3 in Vite.
+Website pessoal com a finalidade de expor minhas experiências profissionais e acadêmicas, projetos e meios de contato.
+Feito com [Vue.js](https://vuejs.org/), [Marked.js](https://github.com/markedjs/marked) e [Vue3 Carousel](https://github.com/ismail9k/vue3-carousel)
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+![Tela do website jadno.tech](public/jadno-tech.png)
 
 ## Project Setup
 
