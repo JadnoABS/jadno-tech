@@ -64,37 +64,36 @@ h2 {
   margin: 0.5rem 0;
 }
 
-@media (max-width: 1125px) and (min-width: 715px) {
-  h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1rem;
-  }
-  
-  .headline {
-    margin: 1%;
-  }
-  
+@media (max-width: 1125px) {
   header {
-    flex-direction: column;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
   }
-  
-  .profile-image {
-    order: 1;
-    height: 40%;
-    margin-bottom: 1rem;
-  }
-  
+
   .headline {
-    order: 2;
+    flex: 1;
+    text-align: center;
+    margin: 0;
   }
-  
+
+  .profile-image {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   img {
-    max-height: 100%;
-    max-width: 70%;
+    max-width: 50%;
+    height: auto;
+    border-radius: 3%;
+    object-fit: contain; 
   }
 }
 
@@ -105,29 +104,6 @@ h2 {
   
   h2 {
     font-size: 0.9rem;
-  }
-  
-  header {
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .profile-image {
-    height: 50%;
-    margin-top: 1rem;
-  }
-  
-  img {
-    max-height: 100%;
-    max-width: 80%;
-  }
-  
-  .headline {
-    order: 2;
-  }
-  
-  .profile-image {
-    order: 1;
   }
 }
 </style>

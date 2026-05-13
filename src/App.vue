@@ -28,6 +28,7 @@ main {
 
 @media (max-width: 714px) {
   main {
+    height: auto;
     min-height: 100vh;
   }
 }

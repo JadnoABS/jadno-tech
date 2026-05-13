@@ -3,7 +3,7 @@
 &nbsp;
 
 \> Seja muito bem vindo ao meu website, o principal objetivo dessa página é contar sobre mim, expondo minhas conquistas, ideias, projetos e competências (e qualquer outra coisa que me dê vontade de compartilhar por aqui).\
-\> O meu nome é Jadno Augusto Barbosa da Silva, tenho 21 anos de idade, resido em São Paulo-SP desde os 18 anos mas nasci e fui criado em Brumado-BA, uma pequena cidade do sudoeste baiano.\
+\> O meu nome é Jadno Augusto Barbosa da Silva, tenho 22 anos de idade, resido em São Paulo-SP desde os 18 anos mas nasci e fui criado em Brumado-BA, uma pequena cidade do sudoeste baiano.\
 \> Sou bacharel em Sistemas de Informação pela Universidade de São Paulo.\
 \> Sou desenvolvedor de software com foco em backend, utilizo tecnologias como Java e Typescript.\
 \> Sou músico: guitarrista, baixista, percussionista e produtor.
@@ -58,6 +58,8 @@ Além disso, tive contato com diversos professores doutores que me guiaram duran
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2023 (7º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Seletiva Balatucada 2024 (1º lugar e estandarte de repique) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2024 - Grupo Ascendente (2º lugar)
+&nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2025 - Grupo Estrela (1º lugar)
+&nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2025 - (4º lugar)
 
 &nbsp;
 
@@ -66,6 +68,16 @@ Além disso, tive contato com diversos professores doutores que me guiaram duran
 # Experiência Profissional
 
 &nbsp;
+
+## Elo7 (Grupo enjoei)
+### Engenheiro de Software Backend (Ago 2025 - Mai 2026)
+Atuei no desenvolvimento e manutençao de um ecossistema de marketplace com arquitetura monolitica com diversos sistemas auxiliares.
+#### Tecnologias utilizadas:
+\> Java \
+\> Golang \
+\> Prometheus \
+\> Jaeger \
+\> Sensu Go
 
 ## Desenvolvedor Fullstack (Freelancer)
 Desde dezembro de 2024 venho recebendo trabalhos temporários na modalidade freelancer, dentre meus trabalhos já feitos está o desenvolvimento de uma plataforma para apoiar o gerenciamento de projetos dentro de uma empresa.

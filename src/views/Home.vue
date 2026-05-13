@@ -5,16 +5,16 @@ import Resume from '../components/Resume.vue';
 
 <template>
 	<div class="page">
-	  <div class="resume">
-        <Resume :update-topics="updateTopics" :current-topic="currentTopic"/>
-	  </div>
-
     <header>
       <Board
       :topics="topics"
       :scroll-to="scrollTo"
       />
     </header>
+
+	  <div class="resume">
+        <Resume :update-topics="updateTopics" :current-topic="currentTopic"/>
+	  </div>
 	</div>
 </template>
 
@@ -71,24 +71,22 @@ header {
     max-width: 100%;
     order: 1;
     height: auto;
-    aspect-ratio: 16/9;
   }
   
   .resume {
     order: 2;
     flex: 1;
-    min-height: 60vh;
+    min-height: 0;
   }
 }
 
 @media (max-width: 714px) {
   header {
-    aspect-ratio: 16/9;
-    min-height: 50vh;
+    height: auto;
   }
   
   .resume {
-    min-height: 50vh;
+    min-height: 0;
   }
 }
 </style>

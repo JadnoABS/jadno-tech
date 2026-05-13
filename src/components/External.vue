@@ -62,6 +62,13 @@ header {
         font-size: large;
         margin: 0.4em 0;
         padding: 0.4em;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 

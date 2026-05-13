@@ -12,7 +12,8 @@ const carouselConfig = {
 </script>
 
 <template>
-  <CRTScreen class="carousel-container" id="top">
+  <!-- Versão desktop: carrossel com duas páginas -->
+  <CRTScreen class="carousel-container desktop-only" id="top">
     <Carousel class="carousel-item" v-bind="carouselConfig">
       <template #slides>
       <Slide>
@@ -28,6 +29,12 @@ const carouselConfig = {
         <Pagination/>
       </template>
     </Carousel>
+  </CRTScreen>
+
+  <!-- Versão mobile: Headline + External juntos, sem carrossel -->
+  <CRTScreen class="mobile-only mobile-header" id="top-mobile">
+    <Headline/>
+    <External/>
   </CRTScreen>
 
   <CRTScreen id="bottom">
@@ -73,7 +80,6 @@ export default {
 }
 
 #bottom {
-  /* border-radius: 1em 0 0 0; */
   padding: 0;
 }
 
@@ -142,7 +148,6 @@ export default {
 }
 
 #bottom li:hover {
-  /* background-color: blueviolet; */
   background-color: #570000;
 }
 
@@ -150,18 +155,41 @@ export default {
   visibility: visible;
 }
 
+/* Por padrão, a versão mobile fica escondida */
+.container.mobile-only {
+  display: none;
+}
+
 @media (max-width: 1125px) {
   #bottom {
     display: none;
   }
-  
-  .carousel-container {
-    height: 100%;
+
+  /* Esconde o carrossel no mobile */
+  .container.desktop-only {
+    display: none;
+  }
+
+  /* Mostra o bloco estático no mobile */
+  .container.mobile-only {
+    display: flex;
+  }
+
+  .container.mobile-header {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5em;
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container {
+    height: auto;
   }
   
-  .carousel-item {
-    height: 100%;
+  .carousel-container {
+    height: auto;
+    min-height: 300px; /* Garante que o carrossel apareça */
   }
 }
 </style>

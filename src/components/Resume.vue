@@ -19,8 +19,6 @@ const renderer: RendererObject = {
       .replace(/[^\w-]+/g, '-')
       .replace(/^-+|-+$/g, '');
 
-    // if(depth >= 3) return `<p style="font-weight: bold; font-size: ${3 - (depth/4)}vw">${text}</p>`;
-
     return `
       <h${depth} style="text-align: center; font-weight: bold; font-size: max(${2.5 - (depth/4)}vw, ${Math.max(18 - depth * 2, 14)}px); word-wrap: break-word; overflow-wrap: break-word; hyphens: auto; white-space: normal; max-width: 100%;" id="${id}">
         ${text}
@@ -124,7 +122,6 @@ export default {
   padding: 2%;
   display: flex;
   flex-direction: column;
-  /* border-radius: 1em; */
 }
 
 .text {
@@ -158,7 +155,8 @@ export default {
 @media (max-width: 1125px) {
   .text {
     height: auto;
-    max-height: 60vh;
+    max-height: none;
+    overflow-y: visible;
   }
   
   .text * {
@@ -169,18 +167,16 @@ export default {
 @media (max-width: 714px) {
   .text {
     padding: 3%;
-    max-height: 50vh;
-    overflow-y: auto;
+    height: auto;
+    max-height: none;
+    overflow-y: visible;
   }
   
   .text * {
     word-break: break-word !important;
     overflow-wrap: anywhere !important;
   }
-}
 
-/* Global styles for mobile text wrapping */
-@media (max-width: 714px) {
   .text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
     word-break: break-word !important;
     overflow-wrap: break-word !important;
