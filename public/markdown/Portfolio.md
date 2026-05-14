@@ -106,9 +106,9 @@ Além disso, tive contato com diversos professores doutores que me guiaram duran
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2022 (5º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2023 (7º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Seletiva Balatucada 2024 (1º lugar e estandarte de repique) \
+&nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2025 - (4º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2024 - Grupo Ascendente (2º lugar) \
-&nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2025 - Grupo Estrela (1º lugar) \
-&nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2025 - (4º lugar)
+&nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2025 - Grupo Estrela (1º lugar)
 
 &nbsp;
 
