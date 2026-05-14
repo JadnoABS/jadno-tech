@@ -82,6 +82,7 @@ header {
 
     header {
         flex-direction: row;
+        align-items: flex-start;
         justify-content: space-evenly;
         gap: 1rem;
         width: 100%;

@@ -9,7 +9,7 @@
       </h2>
     </div>
     <div class="profile-image">
-      <img src="../assets/Jadno.jpeg" alt="Foto de Jadno Barbosa">
+      <img src="../assets/Jadno.jpg" alt="Foto de Jadno Barbosa">
     </div>
   </header>
 </template>

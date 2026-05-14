@@ -12,6 +12,55 @@
 
 ---
 
+# Experiência Profissional
+
+&nbsp;
+
+## Elo7 (Grupo enjoei)
+### Engenheiro de Software Backend (Ago 2025 - Mai 2026)
+Atuei na evolução de um ecossistema complexo de marketplace, transitando fluidamente entre um monolito legado em Java 8 e arquiteturas modernas de microsserviços utilizando Java, Go e Typescript, com forte mensageria com Kafka e infra orquestrada no Kubernetes. Minha trajetória foi marcada por rapido aprendizado e entrega de valor.
+#### Tecnologias utilizadas:
+\> Java (VRaptor) \
+\> Golang \
+\> Typescript \
+\> Kafka \
+\> Kubernetes \
+\> Redis \
+\> MySQL e PostgreSQL
+
+## Desenvolvedor Fullstack (Freelancer)
+Desde dezembro de 2024 venho recebendo trabalhos temporários na modalidade freelancer, dentre meus trabalhos já feitos está o desenvolvimento de uma plataforma para apoiar o gerenciamento de projetos dentro de uma empresa.
+#### Tecnologias utilizadas:
+\> React \
+\> Angular \
+\> Firebase
+
+## MAPS S.A.
+### Estagiário em Desenvolvimento Backend (Out 2023 - Jun 2024)
+Durante a minha atuação na MAPS, estive no time de desenvolvimento de um produto para instituições financeiras, o qual era responsável por pagamentos instantâneos (PIX), integração com o BACEN e funcionalidades de Core Banking.
+#### Tecnologias utilizadas:
+\> Java Spring \
+\> Spring Data JPA \
+\> PostgreSQL \
+\> Apache Kafka \
+\> AWS \
+\> JUnit \
+\> Jenkins CI/CD
+
+## Síntese Jr.
+### Desenvolvedor Backend (Mai 2021 - Jun 2022)
+Empresa júnior do curso de Sistemas de Informação da EACH USP.
+Atuei na equipe de desenvolvimento de um aplicativo mobile para um clube social, aplicativo este que contava com features como gerenciamento de membros, reuniões (atas, agendamentos e presença de membros), calendário e comunicados.
+#### Tecnologias utilizadas:
+\> Node.js \
+\> Express \
+\> Sequelize \
+\> PostgreSQL
+
+&nbsp;
+
+---
+
 # Formação Acadêmica
 
 &nbsp;
@@ -57,56 +106,9 @@ Além disso, tive contato com diversos professores doutores que me guiaram duran
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2022 (5º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2023 (7º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Seletiva Balatucada 2024 (1º lugar e estandarte de repique) \
-&nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2024 - Grupo Ascendente (2º lugar)
-&nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2025 - Grupo Estrela (1º lugar)
+&nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2024 - Grupo Ascendente (2º lugar) \
+&nbsp;&nbsp;&nbsp;&nbsp;\> TABU 2025 - Grupo Estrela (1º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2025 - (4º lugar)
-
-&nbsp;
-
----
-
-# Experiência Profissional
-
-&nbsp;
-
-## Elo7 (Grupo enjoei)
-### Engenheiro de Software Backend (Ago 2025 - Mai 2026)
-Atuei no desenvolvimento e manutençao de um ecossistema de marketplace com arquitetura monolitica com diversos sistemas auxiliares.
-#### Tecnologias utilizadas:
-\> Java \
-\> Golang \
-\> Prometheus \
-\> Jaeger \
-\> Sensu Go
-
-## Desenvolvedor Fullstack (Freelancer)
-Desde dezembro de 2024 venho recebendo trabalhos temporários na modalidade freelancer, dentre meus trabalhos já feitos está o desenvolvimento de uma plataforma para apoiar o gerenciamento de projetos dentro de uma empresa.
-#### Tecnologias utilizadas:
-\> React \
-\> Angular \
-\> Firebase
-
-## MAPS S.A.
-### Estagiário em Desenvolvimento Backend (Out 2023 - Jun 2024)
-Durante a minha atuação na MAPS, estive no time de desenvolvimento de um produto para instituições financeiras, o qual era responsável por pagamentos instantâneos (PIX), integração com o BACEN e funcionalidades de Core Banking.
-#### Tecnologias utilizadas:
-\> Java Spring \
-\> Spring Data JPA \
-\> PostgreSQL \
-\> Apache Kafka \
-\> AWS \
-\> JUnit \
-\> Jenkins CI/CD
-
-## Síntese Jr.
-### Desenvolvedor Backend (Mai 2021 - Jun 2022)
-Empresa júnior do curso de Sistemas de Informação da EACH USP.
-Atuei na equipe de desenvolvimento de um aplicativo mobile para um clube social, aplicativo este que contava com features como gerenciamento de membros, reuniões (atas, agendamentos e presença de membros), calendário e comunicados.
-#### Tecnologias utilizadas:
-\> Node.js \
-\> Express \
-\> Sequelize \
-\> PostgreSQL
 
 &nbsp;
 
