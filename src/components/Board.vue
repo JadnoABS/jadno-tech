@@ -181,6 +181,7 @@ export default {
     padding: 1.5em;
     width: 100%;
     box-sizing: border-box;
+    gap: 1rem;
   }
 
   .container {
