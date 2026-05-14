@@ -101,7 +101,7 @@ Além disso, tive contato com diversos professores doutores que me guiaram duran
 #### Bateria Bandida:
 \> Bateria universitária da EACH USP \
 \> Tocamos em festas da faculdade e em competições de baterias universitárias. \
-\> Sou atualmente diretor da ala de Repiques. \
+\> Fui diretor da ala de Repiques durante 2024 e 2025. \
 \> Competições que participei: \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2022 (5º lugar) \
 &nbsp;&nbsp;&nbsp;&nbsp;\> Balatucada 2023 (7º lugar) \
