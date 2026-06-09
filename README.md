@@ -3,7 +3,7 @@
 Website pessoal com a finalidade de expor minhas experiências profissionais e acadêmicas, projetos e meios de contato.
 Feito com [Vue.js](https://vuejs.org/), [Marked.js](https://github.com/markedjs/marked) e [Vue3 Carousel](https://github.com/ismail9k/vue3-carousel)
 
-![Tela do website jadno.tech](public/jadno-tech.png)
+<img width="1908" height="847" alt="Tela do website jadno.tech" src="https://github.com/user-attachments/assets/c0389c86-38ad-4b66-a7ee-16443eed6964" />
 
 ## Project Setup
 
