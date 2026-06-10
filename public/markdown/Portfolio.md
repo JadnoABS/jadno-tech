@@ -118,6 +118,16 @@ Além disso, tive contato com diversos professores doutores que me guiaram duran
 
 &nbsp;
 
+## [IMOB](https://github.com/JadnoABS/IMOB)
+Sistema de captura e distribuição de leads imobiliários. Permite a criação de anúncios imobiliários por parte dos corretores e os notifica quando um lead é capturado.
+#### Tecnologias Utilizadas:
+\> Python \
+\> Fast API \
+\> Kafka \
+\> Redis
+
+&nbsp;
+
 ## [jadno.tech](https://github.com/JadnoABS/jadno-tech)
 Página de apresentação profissional, ou seja, esse site em que você se encontra agora.
 #### Tecnologias Utilizadas:
